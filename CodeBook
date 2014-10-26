@@ -1,5 +1,5 @@
 CODE BOOK FOR TIDY DATA ASSIGNMENT:
->>>> Ran out of time to complete the Code book
+
 Key steps followed are:
 
 1. Create the training, testing, subject data sets - These have no labels to start with
@@ -18,3 +18,4 @@ Key steps followed are:
 13. Using Dplyr function create the new data set with only means
 14  Arrange the data by Subject
 
+>>>> Ran out of time to complete the Code book with variables and examples on how the clean-up is done at the labels level
