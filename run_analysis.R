@@ -18,7 +18,6 @@ combineSubjectdf <- rbind(trainSubjectdf, testSubjectdf)
 featuredf <- read.table("./features.txt")
 
 meanStddf <- grep("mean\\(\\)|std\\(\\)", featuredf[, 2])
-length(meanStdIndices) # 66
 combinedatdf <- combinedatdf[, meanStddf]
 
 names(combinedatdf) <- gsub("\\(\\)", "", featuredf[meanStddf, 2])
@@ -35,7 +34,6 @@ actLabeldf <- actdf[combineLabelsdf[, 1], 2]
 combineLabelsdf[, 1] <- actLabeldf
 names(combineLabelsdf) <- "activity"
 
-names(combinesubjectdf) <- "subject"
 cleaneddf <- cbind(combineSubjectdf, combineLabelsdf, combinedatdf)
 
 write.table(cleaneddf, "cleanedData.txt") 
