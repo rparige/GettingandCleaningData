@@ -1,3 +1,20 @@
 CODE BOOK FOR TIDY DATA ASSIGNMENT:
+>>>> Ran out of time to complete the Code book
+Key steps followed are:
 
-The data f
+1. Create the training, testing, subject data sets - These have no labels to start with
+2. Create the training and testing label datasets
+3. Combine the training and testing data sets into one (rowbind)
+4. Combine the corresponding subject data sets into one (rowbind)
+5. Combine the label datasets (to apply the labels to the combined data set later)
+5. Load data features (labels) to a a features data frame
+6. Create a mean/std vector that has the column numbers for the labels with mean and Std text strings
+7. Subset the Combined data with only mean/Std columns
+8. Clean up labels with gsub function
+9. change column names replacing texts "mean" and "std" with "Mean" and "Std"
+10. Remove "-" from column names in the combined data set
+11. Clean up activity labels
+12. Column bding the subjects, labels and combined data for the first set of clean data useable for functions
+13. Using Dplyr function create the new data set with only means
+14  Arrange the data by Subject
+
